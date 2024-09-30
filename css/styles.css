@@ -84,6 +84,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
+  position: relative;
 }
 .page-menu-list li {
   list-style-type: none;
@@ -94,8 +95,29 @@ img {
   padding: 8px 12px;
   text-decoration: none;
 }
-.page-menu-list a:hover {
+.link:hover {
   color: #404bbf;
+}
+.link:hover:after {
+  opacity: 1;
+  width: 100%;
+  transition-property: color;
+  border-width: 0;
+}
+.link::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #404bbf;
+  opacity: 0;
+  width: 48px;
+  height: 4px;
+  transition-property: color;
+  position: absolute;
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
+  border-radius: 2px;
 }
 .page-menu-list {
   text-align: center;
@@ -368,11 +390,12 @@ img {
   color: #434455;
 }
 .app-text {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 2%;
-color: #f4f4fd;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  color: #f4f4fd;
+  padding: 8px;
 }
 .focus-portfolio {
   color: #f4f4fd;
@@ -388,7 +411,6 @@ color: #f4f4fd;
   line-height: 24px;
   letter-spacing: 2%;
   display: block;
-  padding: 8px;
   color: white;
   background-color: #4d5ae5;
   width: 100%;

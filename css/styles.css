@@ -304,7 +304,7 @@ img {
   letter-spacing: 2%;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 8px;
+  
 }
 .team-title {
   font-weight: 400;
@@ -370,13 +370,10 @@ img {
   position: relative;
   overflow: hidden;
 }
-.head-portfolio {
-  margin-bottom: 8px;
-}
+
 .explanation-of-portfolio {
   padding: 32px 16px 32px 16px;
   gap: 8px;
-  margin-bottom: 8px;
   border: 1px solid #e7e9fc;
   text-align: left;
   border-top: none;

@@ -75,6 +75,7 @@ img {
 }
 .link {
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-menu-list a {
@@ -275,6 +276,9 @@ img {
   display: flex;
   gap: 24px;
   align-items: center;
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
 }
 .third-section {
   background-color: #f4f4fd;
@@ -285,7 +289,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   box-shadow: 0px 2px 1px 0px #2e2f4214;
-  box-shadow: 0px 1px 1px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
   box-shadow: 0px 1px 6px 0px #2e2f4214;
   text-align: center;
 }
@@ -324,7 +328,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons:hover {
-  --color3: #404BBF;
+  --color3: #404bbf;
 }
 .heading-portfolio {
   font-weight: 700;
@@ -455,7 +459,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons:hover {
-  --color3: #31D0AA;
+  --color3: #31d0aa;
 }
 .footer-social {
   color: white;
